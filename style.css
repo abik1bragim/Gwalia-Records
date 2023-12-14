@@ -1,0 +1,780 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300&family=Montserrat:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    /* background-color: black; */
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    /* border: 1px solid red; */
+    background: url("./imgs/Снимок\ экрана\ 2023-12-07\ в\ 16.56.41.png") no-repeat center/cover;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+nav h1 a {
+    color: red;
+    text-decoration: none;
+}
+
+nav h1 a p {
+    /* border: 1px solid red; */
+    color: white;
+    display: flex;
+    letter-spacing: 7px;
+    align-items: center;
+    justify-content: center;
+}
+
+nav h1 a p span img {
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+nav h1 a p span img {
+    width: 15px;
+    border-radius: 50%;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li {
+    display: flex;
+    align-items: flex-end;
+    justify-content: start;
+    height: 30px;
+    transition: 0.1s;
+}
+
+nav ul li:hover {
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    transition: 0.1s;
+}
+
+/* .sidebar {
+    width: 50%;
+    height: 100vh;
+    border: 1px solid red;
+    display: none;
+} */
+
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 110px; */
+}
+
+section {
+    width: 100%;
+    height: 690px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+
+.About {
+    width: 70%;
+    height: 480px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 5px 40px; */
+}
+
+.about-text {
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid rebeccapurple; */
+    line-height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    /* align-items: center; */
+}
+
+.about-text h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.about-text p {
+    font-size: 19px;
+}
+
+.about-text button {
+    width: 160px;
+    height: 45px;
+    border-radius: 30px;
+    border: 1px solid black;
+    background-color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.about-text button a {
+    color: black;
+    text-decoration: none;
+}
+
+.about-text button:hover {
+    background-color: #000;
+    color: white;
+    transition: .3s;
+}
+
+.about-text button:hover a {
+    color: white;
+}
+
+.about-img {
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-img video {
+    width: 350px;
+    border-radius: 50%;
+}
+
+.MiyaGi-Andy_media {
+    display: none;
+}
+
+.MiyaGi-Andy {
+    width: 100%;
+    height: 780px;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 50px;
+    position: relative;
+    transition: 0.3s !important;
+}
+
+#MiyaGi-Andy {
+    transition: 0.3s ease-in-out;
+}
+
+.MiyaGi_Andy-img {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    background: url("./imgs/1653854507_1-celes-club-p-miyagi-oboi-krasivie-1.png") no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+
+.Andy {
+    width: 35%;
+    height: 100%;
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+.Andy h1 {
+    font-size: 20px;
+    position: absolute;
+    left: 90px;
+    top: 200px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.Andy h1 p {
+    font-size: 13px;
+}
+
+.MiyaGi {
+    width: 65%;
+    height: 100%;
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+.MiyaGi::after {
+    content: "";
+    position: absolute;
+    top: 385px;
+    left: -130px;
+    transform: rotate(-30deg);
+    width: 200px;
+    height: 140px;
+    border-radius: 250px 0 0 80px;
+    /* border: 1px solid gold; */
+}
+
+.MiyaGi h1 {
+    font-size: 25px;
+    position: absolute;
+    left: 300px;
+    top: 100px;
+    text-decoration: none;
+    color: black;
+}
+
+.albom {
+    width: 100%;
+    height: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    padding-top: 50px;
+}
+
+.albom h1 {
+    margin-top: 30px;
+}
+
+.albomlar {
+    width: 85%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    /* border: 1px solid red; */
+    margin-top: 30px;
+}
+
+.hajime {
+    width: 23%;
+    height: 46%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid blue; */
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.hajime a img {
+    width: 100%;
+    height: 55%;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.hajime a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    gap: 10px;
+    font-size: 14px;
+    position: relative;
+}
+
+/* .hajime a:hover {
+    text-decoration: underline;
+} */
+
+.hajime a p {
+    width: 80%;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.hajime a p:nth-child(4) {
+    font-size: 15px;
+}
+
+.hajime a h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 900;
+}
+
+.hajime a h3 span {
+    font-size: 11px;
+}
+
+.hajime a button {
+    width: 160px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: white;
+    cursor: pointer;
+    transition: .3s;
+    text-decoration: none;
+    bottom: 20px;
+    position: absolute;
+}
+
+.hajime a button {
+    color: black;
+    text-decoration: none;
+}
+
+.hajime a:hover button {
+    background-color: #000;
+    color: white;
+    transition: .3s;
+    text-decoration: none;
+}
+
+/* .about-text button:hover a {
+    color: white;
+} */
+
+
+.Xizmatlar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+
+.Xizmatlar h1 {
+    margin-top: 50px;
+}
+
+.Xizmatlar button {
+    width: 160px;
+    height: 45px;
+    border-radius: 30px;
+    border: 1px solid black;
+    background-color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.Xizmatlar button {
+    color: black;
+}
+
+.Xizmatlar button:hover {
+    background-color: #000;
+    color: white;
+    transition: .3s;
+}
+
+.online-olish {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px;
+    /* border: 1px solid gold; */
+}
+
+.img-albums {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid green; */
+    position: relative;
+    gap: 20px;
+}
+
+.img-albums img {
+    width: 200px;
+    border-radius: 15px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    position: absolute;
+    cursor: pointer;
+}
+
+.img-albums img:nth-child(1) {
+    transition: .7s;
+    /* transform: rotate(-50deg)translateX(-90px) translateY(-100px); */
+}
+
+.img-albums:hover img:nth-child(1) {
+    transition: .7s;
+    width: 200px;
+    transform: rotate(-50deg)translateX(-90px) translateY(-100px);
+}
+
+.img-albums img:nth-child(2) {
+    transition: .6s;
+    width: 200px;
+    /* transform: rotate(-30deg) translateX(-70px) translateY(-70px); */
+}
+
+.img-albums:hover img:nth-child(2) {
+    width: 200px;
+    transform: rotate(-20deg) translateX(-90px) translateY(-80px);
+    transition: .6s;
+}
+
+.img-albums img:nth-child(3) {
+    transition: .6s;
+    width: 200px;
+    /* transform: rotate(-20deg)translateX(-10px) translateY(-80px); */
+}
+
+.img-albums:hover img:nth-child(3) {
+    width: 200px;
+    transform: rotate(-10deg)translateX(-10px) translateY(-90px);
+    transition: .6s;
+}
+
+.img-albums img:nth-child(4) {
+    transition: .6s;
+    width: 200px;
+    /* transform: rotate(10deg) translateX(30px) translateY(-90px); */
+}
+
+.img-albums:hover img:nth-child(4) {
+    width: 200px;
+    transform: rotate(10deg)translateX(30px) translateY(-90px);
+    transition: .6s;
+}
+
+.img-albums img:nth-child(5) {
+    transition: .6s ease-in-out;
+    width: 200px;
+    /* transform: rotate(30deg)translateX(70px) translateY(-110px); */
+}
+
+.img-albums:hover img:nth-child(5) {
+    width: 200px;
+    transform: rotate(30deg) translateX(70px) translateY(-110px);
+    transition: .6s;
+}
+
+.img-albums img:nth-child(6) {
+    transition: .6s;
+    width: 200px;
+    /* transform: rotate(50deg)translateX(100px) translateY(-140px); */
+}
+
+.img-albums:hover img:nth-child(6) {
+    width: 200px;
+    transform: rotate(50deg)translateX(100px) translateY(-140px);
+    transition: .6s;
+}
+
+.img-albums img:nth-child(7) {
+    transition: .6s;
+    width: 200px;
+    /* transform: rotate(70deg) translateX(100px) translateY(-170px); */
+}
+
+.img-albums:hover img:nth-child(7) {
+    transition: .6s;
+    width: 200px;
+    transform: rotate(70deg) translateX(100px) translateY(-170px);
+}
+
+.text-albums {
+    width: 50%;
+    height: 100%;
+    padding: 40px;
+    /* border: 1px solid red; */
+}
+
+.text-albums p {
+    margin-top: 30px;
+    line-height: 30px;
+}
+
+.text-albums button {
+    margin-top: 20px;
+}
+
+.songi-albumlar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid blue; */
+}
+
+.engSongi {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid gold; */
+}
+
+.engText {
+    width: 50%;
+    height: 100%;
+    padding: 30px;
+}
+
+.engText p {
+    width: 80%;
+    margin-top: 20px;
+}
+
+.engText button {
+    margin-top: 20px;
+}
+
+.songiAlbum {
+    width: 50%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    position: relative;
+    overflow: hidden;
+    padding-left: 30px;
+}
+
+.songiAlbum img {
+    width: 500px;
+    position: absolute;
+}
+
+.songiAlbum img:nth-child(2) {
+    width: 200px;
+    left: 175px;
+}
+
+.songiAlbum img:nth-child(3) {
+    width: 75px;
+    left: 440px;
+    border-radius: 50%;
+}
+
+.chiptalar {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    /* border: 1px solid red; */
+}
+
+.main-chiptalar {
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+}
+
+.chipta-img {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chipta-img img {
+    width: 650px;
+
+    border-radius: 30px;
+}
+
+.chipta-text {
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid green; */
+    padding: 30px;
+}
+
+.chipta-text p {
+    width: 80%;
+    margin-top: 20px;
+}
+
+.chipta-text button {
+    margin-top: 20px;
+}
+
+.Toplamlar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+
+.toplam {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    /* border: 1px solid gold; */
+}
+
+.toplam1 {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    /* border: 1px solid blue; */
+}
+
+.toplam1 p {
+    line-height: 25px;
+}
+
+.toplam1 button {
+    width: 160px;
+    height: 45px;
+    border-radius: 30px;
+    border: 1px solid black;
+    background-color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.toplam1 button {
+    color: black;
+}
+
+.toplam1 button:hover {
+    background-color: #000;
+    color: white;
+    transition: .3s;
+}
+
+footer {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    margin-top: 40px;
+}
+
+footer img {
+    width: 100%;
+}
+
+.footer-bottom {
+    width: 100%;
+    /* border: 1px solid red; */
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 70px;
+}
+
+.all-music {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.all-music h2 {
+    font-size: 28px;
+}
+
+.all-music img {
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: rgba(244, 241, 241, 0.25) 0px 14px 28px, rgba(248, 247, 247, 0.22) 0px 10px 10px;
+}
+
+.sayt {
+    padding: 30px;
+}
+
+.sayt p {
+    margin-top: 20px;
+}
+
+.sayt ul {
+    list-style-type: none;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.sayt ul li a {
+    color: white;
+    font-size: 20px;
+}
+
+.footer {
+    color: #8C8989;
+    /* border: 1px solid red; */
+}
+
+.footer ul {
+    list-style-type: none;
+    margin-top: 15px;
+    line-height: 30px;
+}
+
+.footer ul li a {
+    color: #8C8989;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: white;
+}
