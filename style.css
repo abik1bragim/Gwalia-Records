@@ -726,6 +726,7 @@ footer img {
     color: white;
     display: flex;
     align-items: center;
+    /* justify-content: center; */
 }
 
 .all-music h2 {
@@ -735,7 +736,8 @@ footer img {
 .all-music img {
     width: 200px;
     border-radius: 50%;
-    box-shadow: rgba(244, 241, 241, 0.25) 0px 14px 28px, rgba(248, 247, 247, 0.22) 0px 10px 10px;
+    box-shadow: none;
+    /* border: 1px solid red; */
 }
 
 .sayt {
