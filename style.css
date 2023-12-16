@@ -83,29 +83,58 @@ nav ul li:hover {
     transition: 0.1s;
 }
 
-/* .sidebar {
-    width: 50%;
-    height: 100vh;
-    border: 1px solid red;
-    display: none;
-} */
-
 main {
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin-top: 110px; */
 }
 
 section {
+    position: relative;
+    z-index: 1;
     width: 100%;
     height: 690px;
     display: flex;
     align-items: center;
     justify-content: center;
     /* border: 1px solid red; */
+}
+
+a .home {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    z-index: 100 !important;
+    right: 30px;
+    bottom: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+    cursor: pointer;
+    transition: .3s;
+    background-color: white;
+}
+
+a .home i {
+    font-size: 23px;
+    color: black;
+}
+
+a .home:hover {
+    background-color: black;
+    color: white;
+    transition: .3s;
+    border: 1px solid white;
+}
+
+a .home:hover i {
+    color: white;
+    transition: .3s;
 }
 
 .About {
@@ -117,7 +146,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* padding: 5px 40px; */
+    /* border: 1px solid gold; */
 }
 
 .about-text {
@@ -129,7 +158,6 @@ section {
     flex-direction: column;
     justify-content: center;
     gap: 25px;
-    /* align-items: center; */
 }
 
 .about-text h1 {
@@ -186,14 +214,22 @@ section {
 
 .MiyaGi-Andy {
     width: 100%;
-    height: 780px;
+    height: 850px;
     /* border: 1px solid red; */
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0px 50px;
     position: relative;
+    /* z-index: 1; */
     transition: 0.3s !important;
+}
+
+.MiyaGi-Andy h1 {
+    position: absolute;
+    z-index: 10;
+    top: 10px;
+    font-size: 28px;
 }
 
 #MiyaGi-Andy {
@@ -204,11 +240,13 @@ section {
     width: 90%;
     height: 90%;
     position: absolute;
+    z-index: 1;
     background: url("./imgs/1653854507_1-celes-club-p-miyagi-oboi-krasivie-1.png") no-repeat center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
     /* border: 1px solid red; */
+    bottom: 5px;
 }
 
 .Andy {
@@ -219,10 +257,10 @@ section {
 }
 
 .Andy h1 {
-    font-size: 20px;
+    font-size: 18px;
     position: absolute;
     left: 90px;
-    top: 200px;
+    top: 250px;
     text-decoration: none;
     color: black;
     text-align: center;
@@ -255,7 +293,7 @@ section {
     font-size: 25px;
     position: absolute;
     left: 300px;
-    top: 100px;
+    top: 120px;
     text-decoration: none;
     color: black;
 }
@@ -345,6 +383,16 @@ section {
     font-size: 11px;
 }
 
+.hajime a span {
+    gap: 20px;
+}
+
+.hajime a del {
+    display: inline;
+    color: red;
+    margin-left: 10px;
+}
+
 .hajime a button {
     width: 160px;
     height: 40px;
@@ -411,7 +459,7 @@ section {
 
 .online-olish {
     width: 100%;
-    height: 550px;
+    height: 450px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -542,10 +590,10 @@ section {
     height: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     /* border: 1px solid blue; */
 }
+
 
 .engSongi {
     width: 100%;
@@ -603,7 +651,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
     /* border: 1px solid red; */
 }
 
@@ -622,9 +670,8 @@ section {
 }
 
 .chipta-img img {
-    width: 650px;
-
-    border-radius: 30px;
+    width: 350px;
+    border-radius: 50%;
 }
 
 .chipta-text {
@@ -726,7 +773,6 @@ footer img {
     color: white;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
 }
 
 .all-music h2 {

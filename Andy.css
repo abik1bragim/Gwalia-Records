@@ -31,8 +31,29 @@ nav {
     justify-content: space-between;
 }
 
-nav img {
-    width: 70px;
+
+nav h1 a {
+    color: red;
+    text-decoration: none;
+}
+
+nav h1 a p {
+    /* border: 1px solid red; */
+    color: white;
+    display: flex;
+    letter-spacing: 7px;
+    align-items: center;
+    justify-content: center;
+}
+
+nav h1 a p span img {
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+nav h1 a p span img {
+    width: 15px;
+    border-radius: 50%;
 }
 
 nav ul {
