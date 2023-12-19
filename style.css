@@ -102,37 +102,35 @@ section {
     /* border: 1px solid red; */
 }
 
-a .home {
+.home {
     width: 60px;
     height: 60px;
     position: fixed;
-    z-index: 100 !important;
     right: 30px;
     bottom: 30px;
     border: 1px solid black;
     border-radius: 50%;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
-    /* background-color: red; */
     cursor: pointer;
-    transition: .3s;
+    z-index: 100;
+    transition: .4s;
     background-color: white;
+    pointer-events: none;
+    /* background-color: red; */
+    text-decoration: none;
+    transition: all ease-in-out 0.4s;
 }
 
-a .home i {
-    font-size: 23px;
-    color: black;
-}
-
-a .home:hover {
+.home:hover {
     background-color: black;
     color: white;
     transition: .3s;
     border: 1px solid white;
 }
 
-a .home:hover i {
+.home:hover i {
     color: white;
     transition: .3s;
 }
