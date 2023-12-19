@@ -1,8 +1,5 @@
 const Home = document.querySelector(".home");
 
-
-
-
 function checkHeight(){
   if (window.scrollY > 200) {
     Home.style.display = "flex"
@@ -14,7 +11,7 @@ console.log(checkHeight)
 
 Home.addEventListener('click', () =>{
   window.scrollTo({
-    top: 50,
+    top: 0,
     behavior: "smooth",
   })
     console.log(scrollTo)

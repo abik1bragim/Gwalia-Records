@@ -103,24 +103,27 @@ section {
 }
 
 .home {
+    position: fixed;
     width: 60px;
     height: 60px;
-    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
     right: 30px;
     bottom: 30px;
     border: 1px solid black;
     border-radius: 50%;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
     z-index: 100;
-    transition: .4s;
     background-color: white;
     pointer-events: none;
     /* background-color: red; */
     text-decoration: none;
-    transition: all ease-in-out 0.4s;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.home i {
+    color: #000;
 }
 
 .home:hover {
@@ -150,12 +153,12 @@ section {
 .about-text {
     width: 50%;
     height: 100%;
-    /* border: 1px solid rebeccapurple; */
     line-height: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 25px;
+    /* border: 1px solid rebeccapurple; */
 }
 
 .about-text h1 {
@@ -213,14 +216,13 @@ section {
 .MiyaGi-Andy {
     width: 100%;
     height: 850px;
-    /* border: 1px solid red; */
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0px 50px;
     position: relative;
-    /* z-index: 1; */
     transition: 0.3s !important;
+    /* border: 1px solid red; */
 }
 
 .MiyaGi-Andy h1 {
@@ -243,15 +245,15 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: 1px solid red; */
     bottom: 5px;
+    /* border: 1px solid red; */
 }
 
 .Andy {
     width: 35%;
     height: 100%;
-    /* border: 1px solid red; */
     position: relative;
+    /* border: 1px solid red; */
 }
 
 .Andy h1 {
@@ -271,8 +273,8 @@ section {
 .MiyaGi {
     width: 65%;
     height: 100%;
-    /* border: 1px solid red; */
     position: relative;
+    /* border: 1px solid red; */
 }
 
 .MiyaGi::after {
@@ -303,8 +305,8 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* border: 1px solid red; */
     padding-top: 50px;
+    /* border: 1px solid red; */
 }
 
 .albom h1 {
@@ -319,8 +321,8 @@ section {
     align-items: center;
     justify-content: center;
     gap: 30px;
-    /* border: 1px solid red; */
     margin-top: 30px;
+    /* border: 1px solid red; */
 }
 
 .hajime {
@@ -328,9 +330,9 @@ section {
     height: 46%;
     display: flex;
     flex-direction: column;
-    /* border: 1px solid blue; */
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* border: 1px solid blue; */
 }
 
 .hajime a img {
@@ -347,7 +349,6 @@ section {
     height: 100%;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     padding: 10px 20px;
     text-decoration: none;
     color: black;
@@ -355,10 +356,6 @@ section {
     font-size: 14px;
     position: relative;
 }
-
-/* .hajime a:hover {
-    text-decoration: underline;
-} */
 
 .hajime a p {
     width: 80%;
@@ -415,11 +412,6 @@ section {
     transition: .3s;
     text-decoration: none;
 }
-
-/* .about-text button:hover a {
-    color: white;
-} */
-
 
 .Xizmatlar {
     width: 100%;
@@ -479,7 +471,6 @@ section {
 .img-albums img {
     width: 200px;
     border-radius: 15px;
-    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
     position: absolute;
     cursor: pointer;
 }
@@ -760,11 +751,11 @@ footer img {
 
 .footer-bottom {
     width: 100%;
-    /* border: 1px solid red; */
     padding: 10px 40px;
     display: flex;
     justify-content: space-evenly;
     gap: 70px;
+    /* border: 1px solid red; */
 }
 
 .all-music {
@@ -778,9 +769,8 @@ footer img {
 }
 
 .all-music img {
-    width: 200px;
+    width: 220px;
     border-radius: 50%;
-    box-shadow: none;
     /* border: 1px solid red; */
 }
 
