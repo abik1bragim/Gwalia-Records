@@ -413,6 +413,26 @@ section {
     text-decoration: none;
 }
 
+.hajime .umshakalaka {
+    position: relative;
+}
+
+.pro {
+    width: 60px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gold;
+    position: absolute;
+    z-index: 2;
+    transform: translateX(230px) translateY(5px);
+    border-radius: 5px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+
 .Xizmatlar {
     width: 100%;
     height: auto;
